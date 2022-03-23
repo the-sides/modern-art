@@ -1,3 +1,7 @@
+<script>
+	import ad from '$static/ad.gif'
+</script>
+
 <!-- A <main> is the same as <div>, but more clear -->
 <main class="max-w-[1138px] mx-auto px-4 xl:px-0 py-8 relative min-h-screen max-w-screen overflow-hidden">
 	<div class="relative z-10">
@@ -35,7 +39,8 @@
 		</div>
 
 		<figure class="mt-4 w-full h-[292px]">
-			<img src="ad.gif" alt="Advertisment" class="w-full h-full object-cover">
+			<!-- This is an alt way to import images/gifs, but with performance boost -->
+			<img src={ad} alt="Advertisment" class="w-full h-full object-cover">
 		</figure>
 
 		<div class="border-t-2 border-black mt-8 pt-4 text-[48px] leading-[52px]">

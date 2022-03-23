@@ -7,6 +7,7 @@
 	<meta property="og:image:width" content="1200"/>
 	<meta property="og:image:height" content="630"/>
 </svelte:head>
+
 <script>
 	import '../styles/tailwind.css';
 	import '../styles/main.css';
