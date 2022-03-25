@@ -18,6 +18,7 @@
 	async function sendMessage(content) {
 		const { data, error } = await database.from('Messages').insert({ content });
 		if (error) throw new Error(error.message);
+		else window.location.reload()
 		return data;
 	}
 	const onSubmit = (ev) => {
